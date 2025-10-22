@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mellstroy-game-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      PYTHON_VERSION: 3.11.8
